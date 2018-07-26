@@ -1,0 +1,44 @@
+﻿<Window x:Class="Tasarim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tasarim"
+        mc:Ignorable="d"
+        Title="Bilgi Portalı"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Background="#dedede">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
+                <Image Name="img_simgedurumu" Margin="5,0,5,0" Height="30" Width="30" Source="/Icons/simgedurumu.png" MouseLeftButtonUp="img_simgedurumu_MouseLeftButtonUp"/>
+                <Image Name="img_kucult" Margin="5,0,5,0" Height="30" Width="30" Source="/Icons/kucult.png" MouseLeftButtonUp="img_kucult_MouseLeftButtonUp"/>
+                <Image Name="img_kapat" Margin="5,0,5,0" Height="30" Width="30" Source="/Icons/kapat.png" MouseLeftButtonUp="img_kapat_MouseLeftButtonUp"/>
+            </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button Background="Transparent">
+                <DockPanel>
+                    <Image Height="40" Width="40" Source="/Icons/arti.png"/>
+                    <Label Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Veri Ekleme"/>
+                </DockPanel>
+            </Button>
+            <Button Background="Transparent">
+                <DockPanel>
+                    <Image Height="40" Width="40" Source="/Icons/sahis.png"/>
+                    <Label Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Şahıs Arama"/>
+                </DockPanel>                
+            </Button>
+            <Button Background="Transparent">
+                <DockPanel>
+                    <Image Height="40" Width="40" Margin="3,0,5,0" Source="/Icons/ayarlar.png"/>
+                    <Label Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ayarlar"/>
+                </DockPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
