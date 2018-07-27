@@ -46,5 +46,10 @@ namespace Tasarim
         {
             WindowState = WindowState.Minimized;
         }
+
+        private void btn_ayarlar_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

@@ -8,12 +8,13 @@
         Title="Bilgi Portalı"
         WindowState="Maximized"
         WindowStyle="None"
-        Background="#dedede">
+        Background="#dedede"
+        FontSize="20">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="30*"/>
         </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="0">
                 <Image Name="img_simgedurumu" Margin="5,0,5,0" Height="30" Width="30" Source="/Icons/simgedurumu.png" MouseLeftButtonUp="img_simgedurumu_MouseLeftButtonUp"/>
@@ -21,24 +22,27 @@
                 <Image Name="img_kapat" Margin="5,0,5,0" Height="30" Width="30" Source="/Icons/kapat.png" MouseLeftButtonUp="img_kapat_MouseLeftButtonUp"/>
             </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <Button Background="Transparent">
+            <Button Name="btn_veriEkleme" Background="Transparent">
                 <DockPanel>
-                    <Image Height="40" Width="40" Source="/Icons/arti.png"/>
+                    <Image ClipToBounds="False" Height="40" Width="40" Source="/Icons/arti.png"/>
                     <Label Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Veri Ekleme"/>
                 </DockPanel>
             </Button>
-            <Button Background="Transparent">
+            <Button Name="btn_sahisArama" Background="Transparent">
                 <DockPanel>
                     <Image Height="40" Width="40" Source="/Icons/sahis.png"/>
                     <Label Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Şahıs Arama"/>
                 </DockPanel>                
             </Button>
-            <Button Background="Transparent">
+            <Button Name="btn_ayarlar" Background="Transparent" Click="btn_ayarlar_Click">
                 <DockPanel>
                     <Image Height="40" Width="40" Margin="3,0,5,0" Source="/Icons/ayarlar.png"/>
                     <Label Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ayarlar"/>
                 </DockPanel>
             </Button>
         </StackPanel>
+        <Grid Name="DuzenlemeAlani" Grid.Row="2">
+            <Label Content="Hoşgeldin" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
     </Grid>
 </Window>
