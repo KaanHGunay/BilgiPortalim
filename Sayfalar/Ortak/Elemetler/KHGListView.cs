@@ -2,13 +2,12 @@
 
 namespace Sayfalar.Ortak.Elemetler
 {
-    public class KHGButton : Button
+    public class KHGListView : ListView
     {
-        public KHGButton()
+        public KHGListView()
         {
             Background = System.Windows.Media.Brushes.Transparent;
             Foreground = Secenekler.YaziRengi;
-            FontSize = Secenekler.YaziBoyutu;
         }
     }
 }

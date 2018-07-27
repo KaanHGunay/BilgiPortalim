@@ -2,7 +2,7 @@
 
 namespace Sayfalar
 {
-    public static class Ortak
+    public static class Secenekler
     {
         public static double YaziBoyutu
         {

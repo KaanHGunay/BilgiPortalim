@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasarim", "Tasarim\Tasarim.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sayfalar", "Sayfalar\Sayfalar.csproj", "{037D80E8-D7A1-41C2-AE12-A4F960E4DEB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeriTabani", "VeriTabani\VeriTabani.csproj", "{13FFA4EA-1CAC-4E5F-A6D2-7032399B717F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{037D80E8-D7A1-41C2-AE12-A4F960E4DEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037D80E8-D7A1-41C2-AE12-A4F960E4DEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{037D80E8-D7A1-41C2-AE12-A4F960E4DEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13FFA4EA-1CAC-4E5F-A6D2-7032399B717F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13FFA4EA-1CAC-4E5F-A6D2-7032399B717F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13FFA4EA-1CAC-4E5F-A6D2-7032399B717F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13FFA4EA-1CAC-4E5F-A6D2-7032399B717F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
